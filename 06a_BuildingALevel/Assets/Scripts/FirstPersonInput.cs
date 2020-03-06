@@ -31,10 +31,7 @@ public class FirstPersonInput : MonoBehaviour {
             Debug.Log("Shot an enemy thing:" + hit.collider.name);
 
             Health enemyHealth = hit.collider.GetComponent<Health>();
-            enemyHealth.TakeDamage(10);
-            if (enemyHealth.isDead) {
-                hit.collider.gameObject.SetActive(false);
-            }
+            enemyHealth.TakeDamage(50);
         } else if (Physics.Raycast(camera.position, camera.forward, out hit, range, barrelMask)) {
             // Make the barrel explode (if it is a barrel)
             ExplodingBarrel barrel = hit.collider.GetComponent<ExplodingBarrel>();
