@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class Health : MonoBehaviour {
     public int maxHP = 100;
@@ -6,9 +7,11 @@ public class Health : MonoBehaviour {
     public bool isDead = false;
 
     private Animator animator = null;
+    private NavMeshAgent agent = null;
 
     private void Awake() {
         animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     public void TakeDamage(int damage) {
@@ -20,6 +23,11 @@ public class Health : MonoBehaviour {
 
             if (animator != null) {
                 animator.SetBool("Dead", true);
+                animator.SetFloat("Speed", 0.0f);
+            }
+
+            if (agent != null) {
+                agent.enabled = false;
             }
         } else {
             this.isDead = false;
