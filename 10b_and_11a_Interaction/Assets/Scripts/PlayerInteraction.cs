@@ -8,14 +8,28 @@ public class PlayerInteraction : MonoBehaviour {
 
     private void Update() {
         RaycastHit hit;
-        LayerMask interactableMask = LayerMask.GetMask("Interactable");
+
+        Collectible collectible = null;
         InteractableObject interactableObject = null;
+
+        LayerMask collectibleMask = LayerMask.GetMask("Collectible");
+        LayerMask interactableMask = LayerMask.GetMask("Interactable");
+
+        if (Physics.Raycast(camera.position, camera.forward, out hit, range, collectibleMask)) {
+            collectible = hit.collider.GetComponent<Collectible>();
+        }
 
         if (Physics.Raycast(camera.position, camera.forward, out hit, range, interactableMask)) {
             interactableObject = hit.collider.gameObject.GetComponent<InteractableObject>();
         }
 
-        if (interactableObject != null) {
+        if (collectible != null) {
+            interactionText.text = collectible.GetInteractionText();
+
+            if (Input.GetButtonDown("Fire2")) {
+                collectible.Activate();
+            }
+        } else if (interactableObject != null) {
             interactionText.text = interactableObject.GetInteractionText();
 
             if (Input.GetButtonDown("Fire2")) {

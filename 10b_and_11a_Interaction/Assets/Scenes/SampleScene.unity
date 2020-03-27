@@ -13242,6 +13242,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0074240384, y: 0.009537114, z: 0.0029565925}
   m_Center: {x: 0.011483667, y: 0.0013646082, z: 0.005813268}
+--- !u!114 &490642073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490642071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a39774b3439a844872aafa740597c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateText: Open the middle drawer
+  animatorParam: MiddleOpen
+  animator: {fileID: 473667095}
 --- !u!43 &495972720
 Mesh:
   m_ObjectHideFlags: 0
@@ -16299,7 +16314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  health: 100
+  health: 90
   isDead: 0
 --- !u!114 &534982972
 MonoBehaviour:
@@ -29437,6 +29452,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000009, y: 0.09128101, z: 0.020000003}
   m_Center: {x: 0.010160629, y: -0.035641003, z: 0.0000000018001038}
+--- !u!1 &1051378465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 625301012979deb43a01281e238ceca8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1064503503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1051378467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051378465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.25238, y: 1.7288803, z: 0.410676}
+  m_Center: {x: 2.1002426, y: 1.2666191, z: -0.052112162}
+--- !u!114 &1051378468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051378465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90bc9cb40dbcb5439246f665eedb7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateText: Collect uzi
+  playerWeapon: {fileID: 534982973}
+  ammoGain: 8
+  includesWeapon: 1
 --- !u!1001 &1064503503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29532,12 +29582,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 625301012979deb43a01281e238ceca8,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -732959106999872827, guid: 625301012979deb43a01281e238ceca8,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -724986317299964592, guid: 625301012979deb43a01281e238ceca8,
         type: 3}
@@ -29547,12 +29597,12 @@ PrefabInstance:
     - target: {fileID: 5133913965574556032, guid: 625301012979deb43a01281e238ceca8,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6775165670893866895, guid: 625301012979deb43a01281e238ceca8,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625301012979deb43a01281e238ceca8, type: 3}
@@ -33858,6 +33908,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422632282}
   m_Mesh: {fileID: 4300006, guid: 380c8a123a673fc45acd91b91b8d0f7b, type: 3}
+--- !u!1 &1425108069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4ed986c8ce2d9804294293b6a6e9d023,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566030031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1425108073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425108069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000014, y: 0.02000001, z: 0.019999998}
+  m_Center: {x: 0.000000059138983, y: -0.000000015832484, z: -0.00000011920929}
+--- !u!114 &1425108074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425108069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa76cf1907640b244b323246fa44d9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateText: Use first aid kit
+  playerHealth: {fileID: 534982971}
+  healthGain: 20
 --- !u!1 &1431475051
 GameObject:
   m_ObjectHideFlags: 0
@@ -39954,7 +40038,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4ed986c8ce2d9804294293b6a6e9d023,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ed986c8ce2d9804294293b6a6e9d023, type: 3}
@@ -49765,7 +49849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a39774b3439a844872aafa740597c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateText: Open this drawer
+  activateText: Open the top drawer
   animatorParam: TopOpen
   animator: {fileID: 473667095}
 --- !u!43 &1907119340
@@ -50094,6 +50178,41 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1919031143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1107145631873256826, guid: a6e7b90afe6f0cd4f90de084a9884946,
+    type: 3}
+  m_PrefabInstance: {fileID: 5359277664694638952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1919031147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919031143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003272674, y: 0.0026218123, z: 0.101557255}
+  m_Center: {x: 0.0008475316, y: -0.000008200937, z: -0.08609925}
+--- !u!114 &1919031148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919031143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90bc9cb40dbcb5439246f665eedb7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateText: Collect uzi ammo
+  playerWeapon: {fileID: 534982973}
+  ammoGain: 17
+  includesWeapon: 0
 --- !u!43 &1967792966
 Mesh:
   m_ObjectHideFlags: 0
@@ -51550,6 +51669,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1261346195}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2091549224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091549223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a39774b3439a844872aafa740597c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateText: Open the bottom drawer
+  animatorParam: BottomOpen
+  animator: {fileID: 473667095}
 --- !u!65 &2091549227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51908,6 +52042,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1336868024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2138143428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2138143432}
+  - component: {fileID: 2138143431}
+  - component: {fileID: 2138143430}
+  - component: {fileID: 2138143429}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &2138143429
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138143428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2138143430
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138143428}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b04f7cf98b130754d8a75128b42cae7b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2138143431
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138143428}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2138143432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138143428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.198, y: 2.7185643, z: -7.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148920372045610
 GameObject:
   m_ObjectHideFlags: 0
@@ -52527,7 +52753,7 @@ PrefabInstance:
     - target: {fileID: 1107145631873256826, guid: a6e7b90afe6f0cd4f90de084a9884946,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8917300919396557819, guid: a6e7b90afe6f0cd4f90de084a9884946,
         type: 3}
